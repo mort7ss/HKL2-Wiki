@@ -1,213 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>HKL 2 Wiki</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HKL II Wiki</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<div id="sidebar" class="sidebar">
+<a href="index.html">🏠 Главная</a>
+<a href="history.html">📜 История</a>
+<a href="timeline.html">📅 Хронология</a>
+<a href="kingdoms.html">👑 Королевства</a>
+<a href="characters.html">👤 Персонажи</a>
+<a href="map.html">🗺️ Карта</a>
+<a href="events.html">⚔️ События</a>
+<a href="pass.html">🎟️ Проходка</a>
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
 <header class="main-header">
-
-<div class="logo">
-
 <h1>⚔️ HKL II</h1>
-
-<p>
-Официальная энциклопедия легендарного мира
-</p>
-
-</div>
-
+<p>Официальная энциклопедия легендарного мира</p>
 </header>
+
 <div class="search-box">
-
-<input 
-type="text" 
-id="searchInput" 
-placeholder="🔍 Поиск по HKL 2 Wiki..."
->
-
-<button onclick="searchWiki()">
-Найти
-</button>
-
+<input type="text" id="searchInput" placeholder="🔍 Поиск по HKL II Wiki...">
+<button onclick="searchWiki()">Найти</button>
 </div>
 
-<nav>
-    <a href="history.html">
-<button>📖 История</button>
-</a>
-    <a href="characters.html">
-<button>👤 Персонажи</button>
-</a>
-<a href="https://www.twitch.tv/kurmasikk">
-<button>
-📺 Twitch Kurmasikk
-</button>
-</a>
-<a href="timeline.html">
-<button>📅 Хронология</button>
-</a>
-    <a href="pass.html">
-<button>🎮 Получить проходку</button>
-</a>
-</nav>
-<div class="layout">
+<div class="container">
 
-<aside>
-    <h3>HKL 2 Wiki</h3>
+<section class="hero card">
+<h1>Легендарное возвращение</h1>
+<p>Средневековый RPG-мир с политикой, королевствами, торговлей и войнами.</p>
+<a href="pass.html"><button class="big-button">🎟️ Получить проходку</button></a>
+</section>
 
-    
-    <a href="history.html">
-<button>📖 История</button>
-</a>
-    <a href="kingdoms.html">
-<button>👑 Королевства</button>
-</a>
-     <a href="characters.html">
-<button>👤 Персонажи</button>
-</a>
-    <a href="map.html">
-<button>🗺️ Карта мира</button>
-</a>
-    <a href="events.html">
-<button>⚔️ События</button>
-</a>
-</aside>
-
-<div class="hero">
-
-<h1>⚔️ HKL II</h1>
-
-<p>
-Легендарное возвращение средневекового Minecraft-сервера
-</p>
-
-<a href="pass.html">
-<button class="big-button">
-🎮 Получить проходку
-</button>
-</a>
-
-</div>
-<section class="news">
-
-<h2>📰 Новости HKL 2</h2>
+<section class="grid-home">
 
 <div class="card">
-
-<h3>🏰 Разработка продолжается</h3>
-
-<p>
-Создатели Kurmasikk и Artemaka продолжают создавать мир HKL II.
-</p>
-
+<h2>📰 Новости</h2>
+<p>Разработка HKL II продолжается.</p>
 </div>
 
-
 <div class="card">
-
-<h3>👑 Королевство Wolland</h3>
-
-<p>
-Главное королевство мира HKL 2 развивается и становится центром нового мира.
-</p>
-
+<h2>👑 Королевства</h2>
+<p>🏰 Wolland<br>🌊 Остров Саймона<br>🔮 Империя Магов</p>
+<a href="kingdoms.html">Открыть →</a>
 </div>
 
+<div class="card">
+<h2>👤 Персонажи</h2>
+<p>Главные герои мира HKL II.</p>
+<a href="characters.html">Открыть →</a>
+</div>
 
 <div class="card">
+<h2>🗺️ Карта мира</h2>
+<p>Исследуй земли HKL II.</p>
+<a href="map.html">Открыть →</a>
+</div>
 
-<h3>📅 Запуск сервера</h3>
+<div class="card">
+<h2>⚔️ События</h2>
+<p>Все важные события сервера.</p>
+<a href="events.html">Открыть →</a>
+</div>
 
-<p>
-Официальный запуск HKL 2 запланирован на июль 2026 года.
-</p>
-
+<div class="card">
+<h2>💬 Сообщество</h2>
+<p>Следи за новостями в Discord и на Twitch.</p>
 </div>
 
 </section>
-<section>
-
-<h2>🌍 О сервере HKL 2</h2>
-
-<p>
-HKL 2 — легендарное возвращение средневекового Minecraft-сервера.
-Это масштабный RPG-мир с королевствами, политикой,
-торговлей, войнами и уникальной историей.
-</p>
-
-<p>
-Игроки смогут исследовать огромный мир,
-строить города, вступать в королевства
-и создавать собственную историю.
-</p>
-
-</section>
-<main>
-
-<h2>🌍 Мир HKL 2</h2>
-
-<p>
-HKL 2 — легендарное возвращение средневекового Minecraft-сервера.
-Мир с королевствами, торговлей, политикой и войнами.
-</p>
-
-
-<h2>👑 Главные королевства</h2>
-
-
-<div class="cards">
-
-<div class="card">
-<h3>🏰 Wolland</h3>
-<p>
-Главное королевство HKL 2.
-Земля замков, портов и королевского двора.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🌊 Остров Саймона</h3>
-<p>
-Загадочная территория с древними руинами и тайнами.
-</p>
-</div>
-
-
-<div class="card">
-<h3>⚔️ Новые земли</h3>
-<p>
-Территории, которые будут открываться в будущем.
-</p>
-</div>
 
 </div>
 
-</main>
-
-</div>
-
-<main>
-
-<h2>Добро пожаловать в HKL 2</h2>
-
-<p>
-HKL 2 — легендарное возвращение средневекового Minecraft-сервера.
-Масштабный RPG-мир с королевствами, политикой, торговлей,
-войнами и настоящей атмосферой средневековья.
-</p>
-
-<h2>Мир сервера</h2>
-
-<p>
-Главное королевство HKL 2 — Wolland.
-Огромное государство с замками, портами и торговыми городами.
-</p>
-
-</main>
 <script src="script.js"></script>
 </body>
 </html>
