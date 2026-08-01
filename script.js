@@ -53,3 +53,50 @@ menu.style.left="0px";
 }
 
 }
+const pages = [
+    {name:"👑 Wolland", link:"kingdoms.html"},
+    {name:"🌊 Остров Саймона", link:"kingdoms.html"},
+    {name:"🔮 Империя Магов", link:"kingdoms.html"},
+    {name:"👤 Kurmasikk", link:"characters.html"},
+    {name:"⚔️ Artemaka", link:"characters.html"},
+    {name:"🐍 ReSnake", link:"characters.html"},
+    {name:"📜 История", link:"history.html"},
+    {name:"📅 Хронология", link:"timeline.html"},
+    {name:"🗺️ Карта", link:"map.html"},
+    {name:"⚔️ События", link:"events.html"},
+    {name:"🎟️ Получить проходку", link:"pass.html"}
+];
+
+const input=document.getElementById("searchInput");
+const suggestions=document.getElementById("suggestions");
+
+input.addEventListener("input",function(){
+
+const text=this.value.toLowerCase();
+
+suggestions.innerHTML="";
+
+if(text===""){
+    suggestions.style.display="none";
+    return;
+}
+
+const result=pages.filter(p=>p.name.toLowerCase().includes(text));
+
+result.forEach(page=>{
+
+const div=document.createElement("div");
+
+div.className="suggestion";
+
+div.textContent=page.name;
+
+div.onclick=()=>window.location=page.link;
+
+suggestions.appendChild(div);
+
+});
+
+suggestions.style.display=result.length?"block":"none";
+
+});

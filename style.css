@@ -528,3 +528,100 @@ cursor:pointer;
 z-index:1100;
 
 }   
+.suggestions{
+    max-width:420px;
+    margin:10px auto;
+    background:#1b1b2b;
+    border-radius:12px;
+    overflow:hidden;
+    display:none;
+    border:1px solid #d4af37;
+}
+
+.suggestion{
+    padding:14px;
+    cursor:pointer;
+    color:white;
+}
+
+.suggestion:hover{
+    background:#6a3df0;
+}
+.social-card{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:#1f1f2e;
+    border-radius:16px;
+    padding:20px;
+    transition:.25s;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.social-card:hover{
+    transform:translateY(-4px);
+    border-color:#9146FF;
+}
+
+.twitch-card{
+    background:linear-gradient(135deg,#9146FF,#5b2ca0);
+}   
+.back-btn{
+display:inline-block;
+margin:20px;
+padding:10px 18px;
+background:#24242b;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.hero-card{
+max-width:900px;
+margin:40px auto;
+padding:35px;
+background:#1d1d24;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,.35);
+}
+
+.info-box{
+margin:30px 0;
+line-height:2;
+font-size:18px;
+}
+
+.download-btn{
+display:inline-block;
+margin-top:25px;
+padding:22px 60px;
+background:#7c3aed;
+color:white;
+font-size:26px;
+font-weight:bold;
+text-decoration:none;
+border-radius:16px;
+transition:.2s;
+}
+
+.download-btn:hover{
+transform:scale(1.05);
+background:#9155ff;
+}
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.download-button{
+    background:linear-gradient(135deg,#7c3aed,#5b21b6);
+}
+
+.download-button:hover{
+    transform:translateY(-3px);
+}

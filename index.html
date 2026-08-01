@@ -17,6 +17,7 @@
 <a href="map.html">🗺️ Карта</a>
 <a href="events.html">⚔️ События</a>
 <a href="pass.html">🎟️ Проходка</a>
+<a href="download.html">📦 Скачать сборку</a>
 </div>
 
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -30,13 +31,24 @@
 <input type="text" id="searchInput" placeholder="🔍 Поиск по HKL II Wiki...">
 <button onclick="searchWiki()">Найти</button>
 </div>
+<div id="suggestions" class="suggestions"></div>
 
 <div class="container">
 
 <section class="hero card">
 <h1>Легендарное возвращение</h1>
 <p>Средневековый RPG-мир с политикой, королевствами, торговлей и войнами.</p>
-<a href="pass.html"><button class="big-button">🎟️ Получить проходку</button></a>
+<div class="hero-buttons">
+
+<a href="pass.html">
+    <button class="big-button">🎟️ Получить проходку</button>
+</a>
+
+<a href="download.html">
+    <button class="big-button download-button">📦 Скачать сборку</button>
+</a>
+
+</div>
 </section>
 
 <section class="grid-home">
@@ -74,7 +86,10 @@
 <h2>💬 Сообщество</h2>
 <p>Следи за новостями в Discord и на Twitch.</p>
 </div>
-
+<a href="https://www.twitch.tv/kurmasikk" target="_blank" class="social-card twitch-card">
+    <h2>📺 Twitch</h2>
+    <p>Смотреть прямые эфиры HKL II</p>
+</a>
 </section>
 
 </div>
